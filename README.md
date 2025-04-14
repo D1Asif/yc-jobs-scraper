@@ -20,3 +20,10 @@ This project scrapes job openings from all hiring startups listed on [Y Combinat
 - ✅ Uses Scrapy for fast and structured data parsing
 - ✅ Supports Zyte Smart Proxy Manager integration
 - ✅ Outputs data in formatted JSON & CSV files
+
+## How to run
+1. Clone the repository
+2. Create and activate a virtual environment
+3. Install dependencies
+4. Create a .env file in the project root and add your Zyte API key (optional if using Zyte):
+5. Run the spider
