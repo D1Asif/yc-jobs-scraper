@@ -2,7 +2,7 @@
 
 This project scrapes job openings from all hiring startups listed on [Y Combinator's Companies page](https://www.ycombinator.com/companies?isHiring=true). It combines **Selenium** (for handling infinite scrolling) and **Scrapy** (for fast structured data extraction), and supports **Zyte Smart Proxy Manager** for scalable, stealthy scraping.
 
-~3,000 jobs have been scraped from 1,000+ companies that are actively recruiting. You'll fin the csv file in the /yc_job/yc_jobs_all.csv or /yc_job/yc_jobs_all.csv file.
+**~3,000 jobs** have been scraped from **1,000+ companies** that are actively recruiting. You'll fin the csv file in the /yc_job/yc_jobs_all.csv or /yc_job/yc_jobs_all.csv file.
 
 ## Technologies
 - Python  
@@ -45,3 +45,13 @@ ZYTE_API_KEY=your_zyte_api_key
 cd yc_jobs
 scrapy crawl yc_job_spider -O all_yc_jobs.csv
 ```
+
+## What's Coming Next
+
+Here are some exciting features and improvements planned for future releases:
+
+- 🔄 **Automated Scheduler**: Schedule the scraper to run daily or weekly using cron jobs or a task queue.
+- 🌐 **Web Dashboard**: Simple UI to view job listings, filter by company/location, and download data.
+- 📫 **Email Alerts**: Get notified when new YC job listings match your criteria.
+- 🧠 **Job Matching AI**: Recommend jobs based on your resume or skillset using LLMs.
+- ☁️ **Cloud Deployment**: Deploy to AWS/ZYTE.
