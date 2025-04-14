@@ -23,7 +23,25 @@ This project scrapes job openings from all hiring startups listed on [Y Combinat
 
 ## How to run
 1. Clone the repository
+```
+git clone https://github.com/D1Asif/yc-jobs-scraper.git
+cd yc-jobs-scraper
+```
 2. Create and activate a virtual environment
+```
+python -m venv venv
+source venv/bin/activate 
+```
 3. Install dependencies
+```
+pip install -r requirements.txt
+```
 4. Create a .env file in the project root and add your Zyte API key (optional if using Zyte):
-5. Run the spider
+```
+ZYTE_API_KEY=your_zyte_api_key
+```
+5. Go to the yc_jobs directory and run the spider
+```
+cd yc_jobs
+scrapy crawl yc_job_spider -O all_yc_jobs.csv
+```
